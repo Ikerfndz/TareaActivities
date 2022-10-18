@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="173dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="28dp"
+        android:text="Heroe Favorito: "
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonAtras"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="247dp"
+        android:layout_marginBottom="110dp"
+        android:onClick="anterior"
+        android:text="Atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="176dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="195dp"
+        android:text="Peli favorita: "
+        app:layout_constraintBottom_toTopOf="@+id/botonAtras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="391dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="17dp"
+        android:onClick="siguiente"
+        android:text="siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonAtras"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
